@@ -1,0 +1,19 @@
+<div id="signup-box">
+              <div class="left">
+                <h1>Sign up</h1>
+                {{#if errors}}
+                    <div class="alert alert-danger">All fields are required</div>
+                {{/if}}
+
+                <form method="post" action="/users/register">
+                  <input type="text" name="name" placeholder="Name" />
+                  <input type="text" name="email" placeholder="E-mail" />
+                  <input type="password" name="password" placeholder="Password" />
+                  <input type="password" name="password2" placeholder="Retype password" />
+
+                  <input type="submit" name="signup_submit" value="Sign me up" />
+                  </form>
+                  <a href="/users/login"><input type="submit" name="Login" value="Login" /></a>
+              </div>
+
+</div>

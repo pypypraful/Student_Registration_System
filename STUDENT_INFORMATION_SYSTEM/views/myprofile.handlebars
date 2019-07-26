@@ -1,0 +1,39 @@
+<div id="blog-box">
+{{#if user_profile}}
+          <div class="left1">
+            <h1>My Profile</h1>
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <th scope="row">Name</th>
+                  <td>{{user_profile.name}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Email</th>
+                  <td>{{user_profile.email}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Course</th>
+                  <td>{{user_profile.course_name}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Branch</th>
+                  <td>{{user_profile.branch_name}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Year</th>
+                  <td>{{user_profile.year}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Address</th>
+                  <td>{{user_profile.address}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mobile Number</th>
+                  <td >{{user_profile.mobile_num}}</td>
+                </tr>
+              </tbody>
+            </table>
+{{/if}}
+</div>
+</div>

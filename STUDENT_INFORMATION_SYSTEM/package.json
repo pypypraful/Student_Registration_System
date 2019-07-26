@@ -1,0 +1,30 @@
+{
+  "name": "student-information-system",
+  "version": "1.0.0",
+  "description": "Application for student essential information",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Praful",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "^5.0.3",
+    "fs": "0.0.1-security",
+    "mongodb": "*",
+    "mongoose": "*",
+    "nodemon": "^1.19.1",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  }
+}

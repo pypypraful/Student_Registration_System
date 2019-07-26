@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Indian International Trade</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://mdbootstrap.com/previews/docs/latest/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://mdbootstrap.com/previews/docs/latest/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/Login.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/Signup.css">
+
+
+
+
+
+</head>
+<body class="fixed-sn deep-purple-skin" style="background-image: url()">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <a href="../myprofile"><p>Student Registration System</p></a>
+            </div>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+              {{#if user}}
+                <li class="nav-item">
+                    <a class="nav-link" href="../myprofile/update"><i class="fa fa-edit"></i> <span class="clearfix d-none d-sm-inline-block">Update Profile</span></a>
+                </li>
+                {{/if}}
+                {{#if user}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/users/logout"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/users/login"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Login</span></a>
+                </li>
+                {{/if}}
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+
+    {{#if success_msg}}
+        <div class="alert alert-success">{{success_msg}}</div>
+    {{/if}}
+    {{#if error_msg}}
+        <div class="alert alert-danger">{{error_msg}}</div>
+    {{/if}}
+    {{#if error}}
+        <div class="alert alert-danger">{{error}}</div>
+    {{/if}}
+
+  {{{body}}}
+
+
+
+    <!---footer-->
+    <div id="footer">
+                <footer> Copyright &copy; 2018.All Rights Reserved. </footer>
+    </div>
+
+        <!--footer ended-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Tooltips -->
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script>
+
+
+
+</body>
+</html>

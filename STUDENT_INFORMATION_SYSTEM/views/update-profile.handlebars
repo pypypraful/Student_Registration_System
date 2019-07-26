@@ -1,0 +1,23 @@
+<div id="blog-box">
+          <div class="left1">
+            <h1>Update Profile here..</h1>
+            {{#if errors}}
+            {{#each errors}}
+              <div class="alert alert-danger">{{msg}}</div>{{/each}}
+            {{/if}}
+            <form method="post" action="/myprofile/update">
+            <input class="blog" type="text" name="email" value={{user.email}} disabled />
+            <input class="blog" type="text" name="name" placeholder="Student Name" />
+            <input class="blog" type="text" name="course_name" placeholder="Your Course" />
+            <input class="blog" type="text" name="branch_name" placeholder="Your Branch" />
+            <input class="blog" type="text" name="year" placeholder="Your Course Year" />
+            <input class="blog" type="text" name="section" placeholder="Your Class Section" />
+            <input class="blog" type="text" name="university_roll_num" placeholder="Your University Roll Number" />
+            <input class="blog" type="text" name="address" placeholder="Your Home Address" />
+            <input class="blog" type="text" name="mobile_num" placeholder="Your Mobile Number" />
+
+            <input class="blog" type="submit" name="submit" value="Submit" />
+            </div>
+          </form>
+
+        </div>
